@@ -1,0 +1,488 @@
+2025-05-10 10:06:29,055 [main] WARN  org.apache.spark.util.Utils - Your hostname, Sandeeps-Mac-mini.local resolves to a loopback address: 127.0.0.1; using 192.168.0.13 instead (on interface en1)
+2025-05-10 10:06:29,070 [main] WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2025-05-10 10:06:29,416 [Thread-2] INFO  org.apache.spark.SparkContext - Running Spark version 3.5.5
+2025-05-10 10:06:29,416 [Thread-2] INFO  org.apache.spark.SparkContext - OS info Mac OS X, 15.4.1, aarch64
+2025-05-10 10:06:29,416 [Thread-2] INFO  org.apache.spark.SparkContext - Java version 17.0.7
+2025-05-10 10:06:29,441 [Thread-2] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-05-10 10:06:29,492 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - ==============================================================
+2025-05-10 10:06:29,492 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - No custom resources configured for spark.driver.
+2025-05-10 10:06:29,492 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - ==============================================================
+2025-05-10 10:06:29,492 [Thread-2] INFO  org.apache.spark.SparkContext - Submitted application: SparkSessionTest
+2025-05-10 10:06:29,499 [Thread-2] INFO  org.apache.spark.resource.ResourceProfile - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-05-10 10:06:29,502 [Thread-2] INFO  org.apache.spark.resource.ResourceProfile - Limiting resource is cpu
+2025-05-10 10:06:29,502 [Thread-2] INFO  org.apache.spark.resource.ResourceProfileManager - Added ResourceProfile id: 0
+2025-05-10 10:06:29,521 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing view acls to: sandeepsarmah
+2025-05-10 10:06:29,521 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing modify acls to: sandeepsarmah
+2025-05-10 10:06:29,521 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing view acls groups to: 
+2025-05-10 10:06:29,521 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing modify acls groups to: 
+2025-05-10 10:06:29,521 [Thread-2] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: sandeepsarmah; groups with view permissions: EMPTY; users with modify permissions: sandeepsarmah; groups with modify permissions: EMPTY
+2025-05-10 10:06:29,602 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 49196.
+2025-05-10 10:06:29,612 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+2025-05-10 10:06:29,625 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+2025-05-10 10:06:29,632 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-05-10 10:06:29,632 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+2025-05-10 10:06:29,634 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMasterHeartbeat
+2025-05-10 10:06:29,642 [Thread-2] INFO  org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/blockmgr-8d770c6b-4c82-4146-bbe0-78a2a029d58d
+2025-05-10 10:06:29,646 [Thread-2] INFO  org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 434.4 MiB
+2025-05-10 10:06:29,652 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+2025-05-10 10:06:29,703 [Thread-2] INFO  org.apache.spark.ui.JettyUtils - Start Jetty 0.0.0.0:4040 for SparkUI
+2025-05-10 10:06:29,723 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+2025-05-10 10:06:29,759 [Thread-2] INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host 192.168.0.13
+2025-05-10 10:06:29,759 [Thread-2] INFO  org.apache.spark.executor.Executor - OS info Mac OS X, 15.4.1, aarch64
+2025-05-10 10:06:29,759 [Thread-2] INFO  org.apache.spark.executor.Executor - Java version 17.0.7
+2025-05-10 10:06:29,761 [Thread-2] INFO  org.apache.spark.executor.Executor - Starting executor with user classpath (userClassPathFirst = false): ''
+2025-05-10 10:06:29,761 [Thread-2] INFO  org.apache.spark.executor.Executor - Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@4e60e624 for default.
+2025-05-10 10:06:29,768 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 49197.
+2025-05-10 10:06:29,768 [Thread-2] INFO  org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.0.13 127.0.0.1:49197
+2025-05-10 10:06:29,769 [Thread-2] INFO  org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-05-10 10:06:29,770 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.0.13, 49197, None)
+2025-05-10 10:06:29,771 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.0.13:49197 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.0.13, 49197, None)
+2025-05-10 10:06:29,772 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.0.13, 49197, None)
+2025-05-10 10:06:29,772 [Thread-2] INFO  org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.0.13, 49197, None)
+2025-05-10 10:06:29,925 [Thread-2] INFO  org.apache.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-05-10 10:06:29,928 [Thread-2] INFO  org.apache.spark.sql.internal.SharedState - Warehouse path is 'file:/Volumes/Sandeep_SSD/Pyspark/Capstone%20Project%20Pycharm/spark-warehouse'.
+2025-05-10 10:06:30,683 [Thread-2] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 55.424292 ms
+2025-05-10 10:06:30,701 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 10:06:30,705 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 0 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2025-05-10 10:06:30,705 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 10:06:30,705 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 10:06:30,705 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 10:06:30,706 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 10:06:30,732 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 12.8 KiB, free 434.4 MiB)
+2025-05-10 10:06:31,345 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 10:06:31,347 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on 192.168.0.13:49197 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:06:31,349 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+2025-05-10 10:06:31,359 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2025-05-10 10:06:31,359 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks resource profile 0
+2025-05-10 10:06:31,375 [dispatcher-event-loop-6] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0) (192.168.0.13, executor driver, partition 0, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,379 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+2025-05-10 10:06:31,676 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 5.049458 ms
+2025-05-10 10:06:31,693 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 282, boot = 258, init = 24, finish = 0
+2025-05-10 10:06:31,700 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1929 bytes result sent to driver
+2025-05-10 10:06:31,702 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 332 ms on 192.168.0.13 (executor driver) (1/1)
+2025-05-10 10:06:31,703 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-05-10 10:06:31,704 [dag-scheduler-event-loop] INFO  org.apache.spark.api.python.PythonAccumulatorV2 - Connected to AccumulatorServer at host: 127.0.0.1 port: 49198
+2025-05-10 10:06:31,705 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (showString at NativeMethodAccessorImpl.java:0) finished in 0.996 s
+2025-05-10 10:06:31,705 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 10:06:31,705 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 0: Stage finished
+2025-05-10 10:06:31,706 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 0 finished: showString at NativeMethodAccessorImpl.java:0, took 1.004413 s
+2025-05-10 10:06:31,710 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 10:06:31,711 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 1 (showString at NativeMethodAccessorImpl.java:0) with 4 output partitions
+2025-05-10 10:06:31,711 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 10:06:31,711 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 10:06:31,711 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 10:06:31,711 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 10:06:31,712 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 12.8 KiB, free 434.4 MiB)
+2025-05-10 10:06:31,715 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 10:06:31,715 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on 192.168.0.13:49197 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:06:31,715 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+2025-05-10 10:06:31,716 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(1, 2, 3, 4))
+2025-05-10 10:06:31,716 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 4 tasks resource profile 0
+2025-05-10 10:06:31,716 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 1) (192.168.0.13, executor driver, partition 1, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,716 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 1.0 (TID 2) (192.168.0.13, executor driver, partition 2, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,717 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 1.0 (TID 3) (192.168.0.13, executor driver, partition 3, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,717 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 1.0 (TID 4) (192.168.0.13, executor driver, partition 4, PROCESS_LOCAL, 9016 bytes) 
+2025-05-10 10:06:31,717 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 1)
+2025-05-10 10:06:31,717 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 1.0 (TID 2)
+2025-05-10 10:06:31,717 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 1.0 (TID 3)
+2025-05-10 10:06:31,717 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 1.0 (TID 4)
+2025-05-10 10:06:31,725 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 3, boot = -26, init = 29, finish = 0
+2025-05-10 10:06:31,735 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 1.0 (TID 3). 1886 bytes result sent to driver
+2025-05-10 10:06:31,737 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 1.0 (TID 3) in 20 ms on 192.168.0.13 (executor driver) (1/4)
+2025-05-10 10:06:31,755 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 32, boot = 5, init = 27, finish = 0
+2025-05-10 10:06:31,757 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 33, boot = 7, init = 26, finish = 0
+2025-05-10 10:06:31,758 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_0_piece0 on 192.168.0.13:49197 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:06:31,758 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 1). 1886 bytes result sent to driver
+2025-05-10 10:06:31,759 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 1.0 (TID 2). 1886 bytes result sent to driver
+2025-05-10 10:06:31,760 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 1) in 44 ms on 192.168.0.13 (executor driver) (2/4)
+2025-05-10 10:06:31,761 [task-result-getter-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 1.0 (TID 2) in 44 ms on 192.168.0.13 (executor driver) (3/4)
+2025-05-10 10:06:31,763 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 39, boot = 10, init = 29, finish = 0
+2025-05-10 10:06:31,764 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 1.0 (TID 4). 1924 bytes result sent to driver
+2025-05-10 10:06:31,766 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 1.0 (TID 4) in 49 ms on 192.168.0.13 (executor driver) (4/4)
+2025-05-10 10:06:31,766 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-05-10 10:06:31,766 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 1 (showString at NativeMethodAccessorImpl.java:0) finished in 0.055 s
+2025-05-10 10:06:31,767 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 10:06:31,767 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 1: Stage finished
+2025-05-10 10:06:31,767 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 1 finished: showString at NativeMethodAccessorImpl.java:0, took 0.056655 s
+2025-05-10 10:06:31,772 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 10:06:31,773 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 2 (showString at NativeMethodAccessorImpl.java:0) with 5 output partitions
+2025-05-10 10:06:31,773 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 2 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 10:06:31,773 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 10:06:31,773 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 10:06:31,773 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 10:06:31,774 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 12.8 KiB, free 434.4 MiB)
+2025-05-10 10:06:31,776 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 10:06:31,776 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on 192.168.0.13:49197 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:06:31,776 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_1_piece0 on 192.168.0.13:49197 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:06:31,776 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+2025-05-10 10:06:31,777 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 5 missing tasks from ResultStage 2 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(5, 6, 7, 8, 9))
+2025-05-10 10:06:31,777 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 5 tasks resource profile 0
+2025-05-10 10:06:31,777 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 5) (192.168.0.13, executor driver, partition 5, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,777 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 2.0 (TID 6) (192.168.0.13, executor driver, partition 6, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,778 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 2.0 (TID 7) (192.168.0.13, executor driver, partition 7, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,778 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 2.0 (TID 8) (192.168.0.13, executor driver, partition 8, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:06:31,778 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 4.0 in stage 2.0 (TID 9) (192.168.0.13, executor driver, partition 9, PROCESS_LOCAL, 9014 bytes) 
+2025-05-10 10:06:31,778 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 5)
+2025-05-10 10:06:31,778 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Running task 4.0 in stage 2.0 (TID 9)
+2025-05-10 10:06:31,778 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 2.0 (TID 8)
+2025-05-10 10:06:31,778 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 2.0 (TID 7)
+2025-05-10 10:06:31,778 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 2.0 (TID 6)
+2025-05-10 10:06:31,782 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 0, boot = -51, init = 51, finish = 0
+2025-05-10 10:06:31,784 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 1, boot = -21, init = 22, finish = 0
+2025-05-10 10:06:31,784 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 1, boot = -20, init = 21, finish = 0
+2025-05-10 10:06:31,786 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 1, boot = -16, init = 17, finish = 0
+2025-05-10 10:06:31,790 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 5). 1886 bytes result sent to driver
+2025-05-10 10:06:31,790 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Finished task 4.0 in stage 2.0 (TID 9). 1924 bytes result sent to driver
+2025-05-10 10:06:31,790 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 6, boot = 6, init = 0, finish = 0
+2025-05-10 10:06:31,790 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 2.0 (TID 7). 1929 bytes result sent to driver
+2025-05-10 10:06:31,791 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 2.0 (TID 8). 1886 bytes result sent to driver
+2025-05-10 10:06:31,791 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 5) in 14 ms on 192.168.0.13 (executor driver) (1/5)
+2025-05-10 10:06:31,791 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 2.0 (TID 6). 1886 bytes result sent to driver
+2025-05-10 10:06:31,792 [task-result-getter-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 2.0 (TID 7) in 15 ms on 192.168.0.13 (executor driver) (2/5)
+2025-05-10 10:06:31,792 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 4.0 in stage 2.0 (TID 9) in 14 ms on 192.168.0.13 (executor driver) (3/5)
+2025-05-10 10:06:31,792 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 2.0 (TID 8) in 14 ms on 192.168.0.13 (executor driver) (4/5)
+2025-05-10 10:06:31,792 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 2.0 (TID 6) in 15 ms on 192.168.0.13 (executor driver) (5/5)
+2025-05-10 10:06:31,792 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2025-05-10 10:06:31,793 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 2 (showString at NativeMethodAccessorImpl.java:0) finished in 0.019 s
+2025-05-10 10:06:31,793 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 10:06:31,793 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 2: Stage finished
+2025-05-10 10:06:31,793 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 2 finished: showString at NativeMethodAccessorImpl.java:0, took 0.020954 s
+2025-05-10 10:06:32,079 [Thread-2] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 4.334791 ms
+2025-05-10 10:06:32,082 [Thread-2] INFO  org.apache.spark.SparkContext - SparkContext is stopping with exitCode 0.
+2025-05-10 10:06:32,086 [Thread-2] INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.0.13:4040
+2025-05-10 10:06:32,090 [dispatcher-event-loop-1] INFO  org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+2025-05-10 10:06:32,098 [Thread-2] INFO  org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+2025-05-10 10:06:32,098 [Thread-2] INFO  org.apache.spark.storage.BlockManager - BlockManager stopped
+2025-05-10 10:06:32,099 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+2025-05-10 10:06:32,100 [dispatcher-event-loop-6] INFO  org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+2025-05-10 10:06:32,104 [Thread-2] INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+2025-05-10 10:06:32,817 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+2025-05-10 10:06:32,818 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-6a189d41-2a40-4e44-8c8b-351b24df32c9
+2025-05-10 10:06:32,822 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-5698a21c-91a8-45fb-9dc6-ae27122384f7/pyspark-50b35399-5fd0-45c0-a31b-87b8fcc9d70d
+2025-05-10 10:06:32,826 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-5698a21c-91a8-45fb-9dc6-ae27122384f7
+2025-05-10 10:55:22,411 [main] WARN  org.apache.spark.util.Utils - Your hostname, Sandeeps-Mac-mini.local resolves to a loopback address: 127.0.0.1; using 192.168.0.13 instead (on interface en1)
+2025-05-10 10:55:22,416 [main] WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2025-05-10 10:55:22,582 [Thread-2] INFO  org.apache.spark.SparkContext - Running Spark version 3.5.5
+2025-05-10 10:55:22,582 [Thread-2] INFO  org.apache.spark.SparkContext - OS info Mac OS X, 15.4.1, aarch64
+2025-05-10 10:55:22,582 [Thread-2] INFO  org.apache.spark.SparkContext - Java version 17.0.7
+2025-05-10 10:55:22,605 [Thread-2] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-05-10 10:55:22,635 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - ==============================================================
+2025-05-10 10:55:22,635 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - No custom resources configured for spark.driver.
+2025-05-10 10:55:22,635 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - ==============================================================
+2025-05-10 10:55:22,635 [Thread-2] INFO  org.apache.spark.SparkContext - Submitted application: SparkSessionTest
+2025-05-10 10:55:22,643 [Thread-2] INFO  org.apache.spark.resource.ResourceProfile - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-05-10 10:55:22,646 [Thread-2] INFO  org.apache.spark.resource.ResourceProfile - Limiting resource is cpu
+2025-05-10 10:55:22,646 [Thread-2] INFO  org.apache.spark.resource.ResourceProfileManager - Added ResourceProfile id: 0
+2025-05-10 10:55:22,667 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing view acls to: sandeepsarmah
+2025-05-10 10:55:22,667 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing modify acls to: sandeepsarmah
+2025-05-10 10:55:22,667 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing view acls groups to: 
+2025-05-10 10:55:22,667 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing modify acls groups to: 
+2025-05-10 10:55:22,668 [Thread-2] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: sandeepsarmah; groups with view permissions: EMPTY; users with modify permissions: sandeepsarmah; groups with modify permissions: EMPTY
+2025-05-10 10:55:22,746 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 49331.
+2025-05-10 10:55:22,755 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+2025-05-10 10:55:22,768 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+2025-05-10 10:55:22,774 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-05-10 10:55:22,774 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+2025-05-10 10:55:22,775 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMasterHeartbeat
+2025-05-10 10:55:22,782 [Thread-2] INFO  org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/blockmgr-66e952f3-ec43-478f-a44c-9ea5aa9b3368
+2025-05-10 10:55:22,786 [Thread-2] INFO  org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 434.4 MiB
+2025-05-10 10:55:22,792 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+2025-05-10 10:55:22,836 [Thread-2] INFO  org.apache.spark.ui.JettyUtils - Start Jetty 0.0.0.0:4040 for SparkUI
+2025-05-10 10:55:22,857 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+2025-05-10 10:55:22,889 [Thread-2] INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host 192.168.0.13
+2025-05-10 10:55:22,889 [Thread-2] INFO  org.apache.spark.executor.Executor - OS info Mac OS X, 15.4.1, aarch64
+2025-05-10 10:55:22,889 [Thread-2] INFO  org.apache.spark.executor.Executor - Java version 17.0.7
+2025-05-10 10:55:22,891 [Thread-2] INFO  org.apache.spark.executor.Executor - Starting executor with user classpath (userClassPathFirst = false): ''
+2025-05-10 10:55:22,892 [Thread-2] INFO  org.apache.spark.executor.Executor - Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@5c5e6768 for default.
+2025-05-10 10:55:22,897 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 49332.
+2025-05-10 10:55:22,897 [Thread-2] INFO  org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.0.13 127.0.0.1:49332
+2025-05-10 10:55:22,898 [Thread-2] INFO  org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-05-10 10:55:22,900 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.0.13, 49332, None)
+2025-05-10 10:55:22,901 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.0.13:49332 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.0.13, 49332, None)
+2025-05-10 10:55:22,901 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.0.13, 49332, None)
+2025-05-10 10:55:22,902 [Thread-2] INFO  org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.0.13, 49332, None)
+2025-05-10 10:55:23,069 [Thread-2] INFO  org.apache.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-05-10 10:55:23,072 [Thread-2] INFO  org.apache.spark.sql.internal.SharedState - Warehouse path is 'file:/Volumes/Sandeep_SSD/Pyspark/Capstone%20Project%20Pycharm/spark-warehouse'.
+2025-05-10 10:55:23,857 [Thread-2] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 61.284 ms
+2025-05-10 10:55:23,875 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 10:55:23,879 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 0 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2025-05-10 10:55:23,879 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 10:55:23,879 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 10:55:23,879 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 10:55:23,880 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 10:55:23,908 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 12.8 KiB, free 434.4 MiB)
+2025-05-10 10:55:24,035 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 10:55:24,036 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on 192.168.0.13:49332 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:55:24,038 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+2025-05-10 10:55:24,044 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2025-05-10 10:55:24,044 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks resource profile 0
+2025-05-10 10:55:24,057 [dispatcher-event-loop-6] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0) (192.168.0.13, executor driver, partition 0, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,061 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+2025-05-10 10:55:24,362 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 4.881958 ms
+2025-05-10 10:55:24,380 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 292, boot = 266, init = 26, finish = 0
+2025-05-10 10:55:24,387 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1929 bytes result sent to driver
+2025-05-10 10:55:24,389 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 336 ms on 192.168.0.13 (executor driver) (1/1)
+2025-05-10 10:55:24,390 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-05-10 10:55:24,391 [dag-scheduler-event-loop] INFO  org.apache.spark.api.python.PythonAccumulatorV2 - Connected to AccumulatorServer at host: 127.0.0.1 port: 49333
+2025-05-10 10:55:24,392 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (showString at NativeMethodAccessorImpl.java:0) finished in 0.509 s
+2025-05-10 10:55:24,393 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 10:55:24,393 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 0: Stage finished
+2025-05-10 10:55:24,393 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 0 finished: showString at NativeMethodAccessorImpl.java:0, took 0.517892 s
+2025-05-10 10:55:24,397 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 10:55:24,398 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 1 (showString at NativeMethodAccessorImpl.java:0) with 4 output partitions
+2025-05-10 10:55:24,398 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 10:55:24,398 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 10:55:24,398 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 10:55:24,398 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 10:55:24,399 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 12.8 KiB, free 434.4 MiB)
+2025-05-10 10:55:24,402 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 10:55:24,402 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on 192.168.0.13:49332 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:55:24,402 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+2025-05-10 10:55:24,403 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(1, 2, 3, 4))
+2025-05-10 10:55:24,403 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 4 tasks resource profile 0
+2025-05-10 10:55:24,403 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 1) (192.168.0.13, executor driver, partition 1, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,404 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 1.0 (TID 2) (192.168.0.13, executor driver, partition 2, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,404 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 1.0 (TID 3) (192.168.0.13, executor driver, partition 3, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,404 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 1.0 (TID 4) (192.168.0.13, executor driver, partition 4, PROCESS_LOCAL, 9016 bytes) 
+2025-05-10 10:55:24,405 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 1)
+2025-05-10 10:55:24,405 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 1.0 (TID 2)
+2025-05-10 10:55:24,405 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 1.0 (TID 3)
+2025-05-10 10:55:24,405 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 1.0 (TID 4)
+2025-05-10 10:55:24,411 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 1, boot = -26, init = 27, finish = 0
+2025-05-10 10:55:24,414 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 1.0 (TID 3). 1843 bytes result sent to driver
+2025-05-10 10:55:24,415 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 1.0 (TID 3) in 11 ms on 192.168.0.13 (executor driver) (1/4)
+2025-05-10 10:55:24,416 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 5, boot = 5, init = 0, finish = 0
+2025-05-10 10:55:24,419 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 1). 1886 bytes result sent to driver
+2025-05-10 10:55:24,420 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 1) in 17 ms on 192.168.0.13 (executor driver) (2/4)
+2025-05-10 10:55:24,435 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 25, boot = 2, init = 23, finish = 0
+2025-05-10 10:55:24,438 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 1.0 (TID 2). 1886 bytes result sent to driver
+2025-05-10 10:55:24,439 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 27, boot = 5, init = 22, finish = 0
+2025-05-10 10:55:24,439 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_0_piece0 on 192.168.0.13:49332 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:55:24,440 [task-result-getter-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 1.0 (TID 2) in 36 ms on 192.168.0.13 (executor driver) (3/4)
+2025-05-10 10:55:24,441 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 1.0 (TID 4). 1924 bytes result sent to driver
+2025-05-10 10:55:24,442 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 1.0 (TID 4) in 38 ms on 192.168.0.13 (executor driver) (4/4)
+2025-05-10 10:55:24,442 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-05-10 10:55:24,442 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 1 (showString at NativeMethodAccessorImpl.java:0) finished in 0.043 s
+2025-05-10 10:55:24,443 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 10:55:24,443 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 1: Stage finished
+2025-05-10 10:55:24,443 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 1 finished: showString at NativeMethodAccessorImpl.java:0, took 0.045353 s
+2025-05-10 10:55:24,447 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 10:55:24,448 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 2 (showString at NativeMethodAccessorImpl.java:0) with 5 output partitions
+2025-05-10 10:55:24,448 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 2 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 10:55:24,448 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 10:55:24,448 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 10:55:24,448 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 10:55:24,449 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 12.8 KiB, free 434.4 MiB)
+2025-05-10 10:55:24,450 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 10:55:24,450 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on 192.168.0.13:49332 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:55:24,450 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+2025-05-10 10:55:24,451 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 5 missing tasks from ResultStage 2 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(5, 6, 7, 8, 9))
+2025-05-10 10:55:24,451 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 5 tasks resource profile 0
+2025-05-10 10:55:24,451 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 5) (192.168.0.13, executor driver, partition 5, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,451 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 2.0 (TID 6) (192.168.0.13, executor driver, partition 6, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,451 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 2.0 (TID 7) (192.168.0.13, executor driver, partition 7, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,452 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 2.0 (TID 8) (192.168.0.13, executor driver, partition 8, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 10:55:24,452 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 4.0 in stage 2.0 (TID 9) (192.168.0.13, executor driver, partition 9, PROCESS_LOCAL, 9014 bytes) 
+2025-05-10 10:55:24,452 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 5)
+2025-05-10 10:55:24,452 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 2.0 (TID 7)
+2025-05-10 10:55:24,452 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 2.0 (TID 6)
+2025-05-10 10:55:24,452 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 2.0 (TID 8)
+2025-05-10 10:55:24,452 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Running task 4.0 in stage 2.0 (TID 9)
+2025-05-10 10:55:24,456 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 1, boot = -36, init = 37, finish = 0
+2025-05-10 10:55:24,456 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 2, boot = -12, init = 14, finish = 0
+2025-05-10 10:55:24,456 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 2, boot = -14, init = 16, finish = 0
+2025-05-10 10:55:24,461 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 2.0 (TID 6). 1886 bytes result sent to driver
+2025-05-10 10:55:24,461 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Finished task 4.0 in stage 2.0 (TID 9). 1924 bytes result sent to driver
+2025-05-10 10:55:24,462 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 6, boot = 6, init = 0, finish = 0
+2025-05-10 10:55:24,462 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 2.0 (TID 7). 1886 bytes result sent to driver
+2025-05-10 10:55:24,462 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 2.0 (TID 6) in 11 ms on 192.168.0.13 (executor driver) (1/5)
+2025-05-10 10:55:24,462 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_1_piece0 on 192.168.0.13:49332 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:55:24,463 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 4.0 in stage 2.0 (TID 9) in 11 ms on 192.168.0.13 (executor driver) (2/5)
+2025-05-10 10:55:24,463 [task-result-getter-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 2.0 (TID 7) in 12 ms on 192.168.0.13 (executor driver) (3/5)
+2025-05-10 10:55:24,463 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 5). 1886 bytes result sent to driver
+2025-05-10 10:55:24,464 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 5) in 13 ms on 192.168.0.13 (executor driver) (4/5)
+2025-05-10 10:55:24,483 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 27, boot = 3, init = 24, finish = 0
+2025-05-10 10:55:24,485 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 2.0 (TID 8). 1886 bytes result sent to driver
+2025-05-10 10:55:24,485 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 2.0 (TID 8) in 34 ms on 192.168.0.13 (executor driver) (5/5)
+2025-05-10 10:55:24,485 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2025-05-10 10:55:24,486 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 2 (showString at NativeMethodAccessorImpl.java:0) finished in 0.037 s
+2025-05-10 10:55:24,486 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 10:55:24,486 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 2: Stage finished
+2025-05-10 10:55:24,486 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 2 finished: showString at NativeMethodAccessorImpl.java:0, took 0.038661 s
+2025-05-10 10:55:24,724 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_2_piece0 on 192.168.0.13:49332 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 10:55:24,764 [Thread-2] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 4.539584 ms
+2025-05-10 10:55:24,767 [Thread-2] INFO  org.apache.spark.SparkContext - SparkContext is stopping with exitCode 0.
+2025-05-10 10:55:24,771 [Thread-2] INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.0.13:4040
+2025-05-10 10:55:24,774 [dispatcher-event-loop-0] INFO  org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+2025-05-10 10:55:24,783 [Thread-2] INFO  org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+2025-05-10 10:55:24,783 [Thread-2] INFO  org.apache.spark.storage.BlockManager - BlockManager stopped
+2025-05-10 10:55:24,784 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+2025-05-10 10:55:24,785 [dispatcher-event-loop-4] INFO  org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+2025-05-10 10:55:24,790 [Thread-2] INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+2025-05-10 10:55:25,529 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+2025-05-10 10:55:25,529 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-4b56671c-f29f-4497-b8f5-24798df6ea77/pyspark-5032a06d-5a31-4865-af84-d9830cd9e607
+2025-05-10 10:55:25,535 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-4b56671c-f29f-4497-b8f5-24798df6ea77
+2025-05-10 10:55:25,540 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-68960d24-283d-45a1-a9ac-8bc6a9c2f965
+2025-05-10 11:03:08,626 [main] WARN  org.apache.spark.util.Utils - Your hostname, Sandeeps-Mac-mini.local resolves to a loopback address: 127.0.0.1; using 192.168.0.13 instead (on interface en1)
+2025-05-10 11:03:08,631 [main] WARN  org.apache.spark.util.Utils - Set SPARK_LOCAL_IP if you need to bind to another address
+2025-05-10 11:03:08,944 [Thread-2] INFO  org.apache.spark.SparkContext - Running Spark version 3.5.5
+2025-05-10 11:03:08,944 [Thread-2] INFO  org.apache.spark.SparkContext - OS info Mac OS X, 15.4.1, aarch64
+2025-05-10 11:03:08,944 [Thread-2] INFO  org.apache.spark.SparkContext - Java version 17.0.7
+2025-05-10 11:03:08,969 [Thread-2] WARN  org.apache.hadoop.util.NativeCodeLoader - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2025-05-10 11:03:09,003 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - ==============================================================
+2025-05-10 11:03:09,003 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - No custom resources configured for spark.driver.
+2025-05-10 11:03:09,003 [Thread-2] INFO  org.apache.spark.resource.ResourceUtils - ==============================================================
+2025-05-10 11:03:09,003 [Thread-2] INFO  org.apache.spark.SparkContext - Submitted application: SparkSessionTest
+2025-05-10 11:03:09,009 [Thread-2] INFO  org.apache.spark.resource.ResourceProfile - Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+2025-05-10 11:03:09,012 [Thread-2] INFO  org.apache.spark.resource.ResourceProfile - Limiting resource is cpu
+2025-05-10 11:03:09,012 [Thread-2] INFO  org.apache.spark.resource.ResourceProfileManager - Added ResourceProfile id: 0
+2025-05-10 11:03:09,029 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing view acls to: sandeepsarmah
+2025-05-10 11:03:09,030 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing modify acls to: sandeepsarmah
+2025-05-10 11:03:09,030 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing view acls groups to: 
+2025-05-10 11:03:09,030 [Thread-2] INFO  org.apache.spark.SecurityManager - Changing modify acls groups to: 
+2025-05-10 11:03:09,030 [Thread-2] INFO  org.apache.spark.SecurityManager - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: sandeepsarmah; groups with view permissions: EMPTY; users with modify permissions: sandeepsarmah; groups with modify permissions: EMPTY
+2025-05-10 11:03:09,114 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'sparkDriver' on port 49380.
+2025-05-10 11:03:09,126 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering MapOutputTracker
+2025-05-10 11:03:09,141 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMaster
+2025-05-10 11:03:09,147 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2025-05-10 11:03:09,147 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - BlockManagerMasterEndpoint up
+2025-05-10 11:03:09,148 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering BlockManagerMasterHeartbeat
+2025-05-10 11:03:09,156 [Thread-2] INFO  org.apache.spark.storage.DiskBlockManager - Created local directory at /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/blockmgr-cad3bfb1-df87-4440-9ca9-1e11b0ebfe43
+2025-05-10 11:03:09,161 [Thread-2] INFO  org.apache.spark.storage.memory.MemoryStore - MemoryStore started with capacity 434.4 MiB
+2025-05-10 11:03:09,167 [Thread-2] INFO  org.apache.spark.SparkEnv - Registering OutputCommitCoordinator
+2025-05-10 11:03:09,216 [Thread-2] INFO  org.apache.spark.ui.JettyUtils - Start Jetty 0.0.0.0:4040 for SparkUI
+2025-05-10 11:03:09,235 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'SparkUI' on port 4040.
+2025-05-10 11:03:09,268 [Thread-2] INFO  org.apache.spark.executor.Executor - Starting executor ID driver on host 192.168.0.13
+2025-05-10 11:03:09,268 [Thread-2] INFO  org.apache.spark.executor.Executor - OS info Mac OS X, 15.4.1, aarch64
+2025-05-10 11:03:09,268 [Thread-2] INFO  org.apache.spark.executor.Executor - Java version 17.0.7
+2025-05-10 11:03:09,271 [Thread-2] INFO  org.apache.spark.executor.Executor - Starting executor with user classpath (userClassPathFirst = false): ''
+2025-05-10 11:03:09,271 [Thread-2] INFO  org.apache.spark.executor.Executor - Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@13170216 for default.
+2025-05-10 11:03:09,277 [Thread-2] INFO  org.apache.spark.util.Utils - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 49381.
+2025-05-10 11:03:09,277 [Thread-2] INFO  org.apache.spark.network.netty.NettyBlockTransferService - Server created on 192.168.0.13 127.0.0.1:49381
+2025-05-10 11:03:09,278 [Thread-2] INFO  org.apache.spark.storage.BlockManager - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2025-05-10 11:03:09,280 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - Registering BlockManager BlockManagerId(driver, 192.168.0.13, 49381, None)
+2025-05-10 11:03:09,280 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerMasterEndpoint - Registering block manager 192.168.0.13:49381 with 434.4 MiB RAM, BlockManagerId(driver, 192.168.0.13, 49381, None)
+2025-05-10 11:03:09,281 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - Registered BlockManager BlockManagerId(driver, 192.168.0.13, 49381, None)
+2025-05-10 11:03:09,281 [Thread-2] INFO  org.apache.spark.storage.BlockManager - Initialized BlockManager: BlockManagerId(driver, 192.168.0.13, 49381, None)
+2025-05-10 11:03:09,439 [Thread-2] INFO  org.apache.spark.sql.internal.SharedState - Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+2025-05-10 11:03:09,442 [Thread-2] INFO  org.apache.spark.sql.internal.SharedState - Warehouse path is 'file:/Volumes/Sandeep_SSD/Pyspark/Capstone_Project_Pyspark/spark-warehouse'.
+2025-05-10 11:03:10,236 [Thread-2] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 60.726334 ms
+2025-05-10 11:03:10,254 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 11:03:10,258 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 0 (showString at NativeMethodAccessorImpl.java:0) with 1 output partitions
+2025-05-10 11:03:10,258 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 0 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 11:03:10,258 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 11:03:10,258 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 11:03:10,259 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 0 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 11:03:10,291 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_0 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+2025-05-10 11:03:10,444 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_0_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 11:03:10,445 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_0_piece0 in memory on 192.168.0.13:49381 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 11:03:10,446 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 0 from broadcast at DAGScheduler.scala:1585
+2025-05-10 11:03:10,452 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(0))
+2025-05-10 11:03:10,453 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 0.0 with 1 tasks resource profile 0
+2025-05-10 11:03:10,466 [dispatcher-event-loop-6] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 0.0 (TID 0) (192.168.0.13, executor driver, partition 0, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,470 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 0.0 (TID 0)
+2025-05-10 11:03:10,739 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 4.622667 ms
+2025-05-10 11:03:10,751 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 256, boot = 236, init = 20, finish = 0
+2025-05-10 11:03:10,760 [Executor task launch worker for task 0.0 in stage 0.0 (TID 0)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 0.0 (TID 0). 1929 bytes result sent to driver
+2025-05-10 11:03:10,762 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 0.0 (TID 0) in 300 ms on 192.168.0.13 (executor driver) (1/1)
+2025-05-10 11:03:10,763 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2025-05-10 11:03:10,764 [dag-scheduler-event-loop] INFO  org.apache.spark.api.python.PythonAccumulatorV2 - Connected to AccumulatorServer at host: 127.0.0.1 port: 49382
+2025-05-10 11:03:10,765 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 0 (showString at NativeMethodAccessorImpl.java:0) finished in 0.501 s
+2025-05-10 11:03:10,765 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 11:03:10,765 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 0: Stage finished
+2025-05-10 11:03:10,766 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 0 finished: showString at NativeMethodAccessorImpl.java:0, took 0.511200 s
+2025-05-10 11:03:10,769 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 11:03:10,770 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 1 (showString at NativeMethodAccessorImpl.java:0) with 4 output partitions
+2025-05-10 11:03:10,770 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 1 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 11:03:10,770 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 11:03:10,770 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 11:03:10,770 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 1 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 11:03:10,771 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_1 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+2025-05-10 11:03:10,773 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_1_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 11:03:10,774 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_1_piece0 in memory on 192.168.0.13:49381 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 11:03:10,774 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 1 from broadcast at DAGScheduler.scala:1585
+2025-05-10 11:03:10,774 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 4 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(1, 2, 3, 4))
+2025-05-10 11:03:10,774 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 1.0 with 4 tasks resource profile 0
+2025-05-10 11:03:10,775 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 1.0 (TID 1) (192.168.0.13, executor driver, partition 1, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,775 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 1.0 (TID 2) (192.168.0.13, executor driver, partition 2, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,775 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 1.0 (TID 3) (192.168.0.13, executor driver, partition 3, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,775 [dispatcher-event-loop-9] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 1.0 (TID 4) (192.168.0.13, executor driver, partition 4, PROCESS_LOCAL, 9016 bytes) 
+2025-05-10 11:03:10,776 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 1.0 (TID 1)
+2025-05-10 11:03:10,776 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 1.0 (TID 2)
+2025-05-10 11:03:10,776 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 1.0 (TID 3)
+2025-05-10 11:03:10,776 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 1.0 (TID 4)
+2025-05-10 11:03:10,782 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_0_piece0 on 192.168.0.13:49381 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 11:03:10,783 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 2, boot = -23, init = 25, finish = 0
+2025-05-10 11:03:10,788 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 5, boot = 3, init = 2, finish = 0
+2025-05-10 11:03:10,790 [Executor task launch worker for task 3.0 in stage 1.0 (TID 4)] INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 1.0 (TID 4). 1967 bytes result sent to driver
+2025-05-10 11:03:10,793 [Executor task launch worker for task 0.0 in stage 1.0 (TID 1)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 1.0 (TID 1). 1929 bytes result sent to driver
+2025-05-10 11:03:10,793 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 1.0 (TID 4) in 18 ms on 192.168.0.13 (executor driver) (1/4)
+2025-05-10 11:03:10,794 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 1.0 (TID 1) in 19 ms on 192.168.0.13 (executor driver) (2/4)
+2025-05-10 11:03:10,807 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 26, boot = 3, init = 23, finish = 0
+2025-05-10 11:03:10,809 [Executor task launch worker for task 1.0 in stage 1.0 (TID 2)] INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 1.0 (TID 2). 1886 bytes result sent to driver
+2025-05-10 11:03:10,810 [task-result-getter-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 1.0 (TID 2) in 35 ms on 192.168.0.13 (executor driver) (3/4)
+2025-05-10 11:03:10,811 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 30, boot = 8, init = 22, finish = 0
+2025-05-10 11:03:10,812 [Executor task launch worker for task 2.0 in stage 1.0 (TID 3)] INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 1.0 (TID 3). 1886 bytes result sent to driver
+2025-05-10 11:03:10,812 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 1.0 (TID 3) in 37 ms on 192.168.0.13 (executor driver) (4/4)
+2025-05-10 11:03:10,812 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2025-05-10 11:03:10,813 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 1 (showString at NativeMethodAccessorImpl.java:0) finished in 0.043 s
+2025-05-10 11:03:10,813 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 11:03:10,813 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 1: Stage finished
+2025-05-10 11:03:10,813 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 1 finished: showString at NativeMethodAccessorImpl.java:0, took 0.043906 s
+2025-05-10 11:03:10,816 [Thread-2] INFO  org.apache.spark.SparkContext - Starting job: showString at NativeMethodAccessorImpl.java:0
+2025-05-10 11:03:10,817 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Got job 2 (showString at NativeMethodAccessorImpl.java:0) with 5 output partitions
+2025-05-10 11:03:10,817 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Final stage: ResultStage 2 (showString at NativeMethodAccessorImpl.java:0)
+2025-05-10 11:03:10,817 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Parents of final stage: List()
+2025-05-10 11:03:10,817 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Missing parents: List()
+2025-05-10 11:03:10,817 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting ResultStage 2 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0), which has no missing parents
+2025-05-10 11:03:10,818 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_2 stored as values in memory (estimated size 12.7 KiB, free 434.4 MiB)
+2025-05-10 11:03:10,819 [dag-scheduler-event-loop] INFO  org.apache.spark.storage.memory.MemoryStore - Block broadcast_2_piece0 stored as bytes in memory (estimated size 6.7 KiB, free 434.4 MiB)
+2025-05-10 11:03:10,819 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Added broadcast_2_piece0 in memory on 192.168.0.13:49381 (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 11:03:10,819 [dag-scheduler-event-loop] INFO  org.apache.spark.SparkContext - Created broadcast 2 from broadcast at DAGScheduler.scala:1585
+2025-05-10 11:03:10,820 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Submitting 5 missing tasks from ResultStage 2 (MapPartitionsRDD[6] at showString at NativeMethodAccessorImpl.java:0) (first 15 tasks are for partitions Vector(5, 6, 7, 8, 9))
+2025-05-10 11:03:10,820 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Adding task set 2.0 with 5 tasks resource profile 0
+2025-05-10 11:03:10,820 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 0.0 in stage 2.0 (TID 5) (192.168.0.13, executor driver, partition 5, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,820 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 1.0 in stage 2.0 (TID 6) (192.168.0.13, executor driver, partition 6, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,820 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 2.0 in stage 2.0 (TID 7) (192.168.0.13, executor driver, partition 7, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,821 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 3.0 in stage 2.0 (TID 8) (192.168.0.13, executor driver, partition 8, PROCESS_LOCAL, 8979 bytes) 
+2025-05-10 11:03:10,821 [dispatcher-event-loop-8] INFO  org.apache.spark.scheduler.TaskSetManager - Starting task 4.0 in stage 2.0 (TID 9) (192.168.0.13, executor driver, partition 9, PROCESS_LOCAL, 9014 bytes) 
+2025-05-10 11:03:10,821 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Running task 3.0 in stage 2.0 (TID 8)
+2025-05-10 11:03:10,821 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Running task 1.0 in stage 2.0 (TID 6)
+2025-05-10 11:03:10,821 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Running task 2.0 in stage 2.0 (TID 7)
+2025-05-10 11:03:10,821 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Running task 0.0 in stage 2.0 (TID 5)
+2025-05-10 11:03:10,821 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Running task 4.0 in stage 2.0 (TID 9)
+2025-05-10 11:03:10,825 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 1, boot = -12, init = 13, finish = 0
+2025-05-10 11:03:10,825 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 1, boot = -34, init = 35, finish = 0
+2025-05-10 11:03:10,826 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 2, boot = -9, init = 11, finish = 0
+2025-05-10 11:03:10,829 [Executor task launch worker for task 3.0 in stage 2.0 (TID 8)] INFO  org.apache.spark.executor.Executor - Finished task 3.0 in stage 2.0 (TID 8). 1843 bytes result sent to driver
+2025-05-10 11:03:10,829 [Executor task launch worker for task 2.0 in stage 2.0 (TID 7)] INFO  org.apache.spark.executor.Executor - Finished task 2.0 in stage 2.0 (TID 7). 1843 bytes result sent to driver
+2025-05-10 11:03:10,829 [Executor task launch worker for task 1.0 in stage 2.0 (TID 6)] INFO  org.apache.spark.executor.Executor - Finished task 1.0 in stage 2.0 (TID 6). 1843 bytes result sent to driver
+2025-05-10 11:03:10,830 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 3.0 in stage 2.0 (TID 8) in 9 ms on 192.168.0.13 (executor driver) (1/5)
+2025-05-10 11:03:10,831 [task-result-getter-1] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 2.0 in stage 2.0 (TID 7) in 10 ms on 192.168.0.13 (executor driver) (2/5)
+2025-05-10 11:03:10,831 [task-result-getter-3] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 1.0 in stage 2.0 (TID 6) in 11 ms on 192.168.0.13 (executor driver) (3/5)
+2025-05-10 11:03:10,831 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 7, boot = 7, init = 0, finish = 0
+2025-05-10 11:03:10,832 [Executor task launch worker for task 4.0 in stage 2.0 (TID 9)] INFO  org.apache.spark.executor.Executor - Finished task 4.0 in stage 2.0 (TID 9). 1881 bytes result sent to driver
+2025-05-10 11:03:10,833 [task-result-getter-0] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 4.0 in stage 2.0 (TID 9) in 12 ms on 192.168.0.13 (executor driver) (4/5)
+2025-05-10 11:03:10,848 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.api.python.PythonRunner - Times: total = 23, boot = 3, init = 20, finish = 0
+2025-05-10 11:03:10,849 [Executor task launch worker for task 0.0 in stage 2.0 (TID 5)] INFO  org.apache.spark.executor.Executor - Finished task 0.0 in stage 2.0 (TID 5). 1843 bytes result sent to driver
+2025-05-10 11:03:10,849 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSetManager - Finished task 0.0 in stage 2.0 (TID 5) in 29 ms on 192.168.0.13 (executor driver) (5/5)
+2025-05-10 11:03:10,849 [task-result-getter-2] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2025-05-10 11:03:10,850 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - ResultStage 2 (showString at NativeMethodAccessorImpl.java:0) finished in 0.031 s
+2025-05-10 11:03:10,850 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.DAGScheduler - Job 2 is finished. Cancelling potential speculative or zombie tasks for this job
+2025-05-10 11:03:10,850 [dag-scheduler-event-loop] INFO  org.apache.spark.scheduler.TaskSchedulerImpl - Killing all running tasks in stage 2: Stage finished
+2025-05-10 11:03:10,850 [Thread-2] INFO  org.apache.spark.scheduler.DAGScheduler - Job 2 finished: showString at NativeMethodAccessorImpl.java:0, took 0.033671 s
+2025-05-10 11:03:11,096 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_1_piece0 on 192.168.0.13:49381 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 11:03:11,097 [dispatcher-BlockManagerMaster] INFO  org.apache.spark.storage.BlockManagerInfo - Removed broadcast_2_piece0 on 192.168.0.13:49381 in memory (size: 6.7 KiB, free: 434.4 MiB)
+2025-05-10 11:03:11,129 [Thread-2] INFO  org.apache.spark.sql.catalyst.expressions.codegen.CodeGenerator - Code generated in 4.540458 ms
+2025-05-10 11:03:11,132 [Thread-2] INFO  org.apache.spark.SparkContext - SparkContext is stopping with exitCode 0.
+2025-05-10 11:03:11,136 [Thread-2] INFO  org.apache.spark.ui.SparkUI - Stopped Spark web UI at http://192.168.0.13:4040
+2025-05-10 11:03:11,140 [dispatcher-event-loop-0] INFO  org.apache.spark.MapOutputTrackerMasterEndpoint - MapOutputTrackerMasterEndpoint stopped!
+2025-05-10 11:03:11,148 [Thread-2] INFO  org.apache.spark.storage.memory.MemoryStore - MemoryStore cleared
+2025-05-10 11:03:11,149 [Thread-2] INFO  org.apache.spark.storage.BlockManager - BlockManager stopped
+2025-05-10 11:03:11,149 [Thread-2] INFO  org.apache.spark.storage.BlockManagerMaster - BlockManagerMaster stopped
+2025-05-10 11:03:11,150 [dispatcher-event-loop-5] INFO  org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint - OutputCommitCoordinator stopped!
+2025-05-10 11:03:11,154 [Thread-2] INFO  org.apache.spark.SparkContext - Successfully stopped SparkContext
+2025-05-10 11:03:11,886 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Shutdown hook called
+2025-05-10 11:03:11,886 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-9ac0c9b8-35b9-4b0e-914d-1ccb6742e076/pyspark-0a45ed66-4761-471d-a648-1d33522af97a
+2025-05-10 11:03:11,891 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-9ac0c9b8-35b9-4b0e-914d-1ccb6742e076
+2025-05-10 11:03:11,896 [shutdown-hook-0] INFO  org.apache.spark.util.ShutdownHookManager - Deleting directory /private/var/folders/8f/vvdngt297b9g8dbgpwzry0sh0000gn/T/spark-c6e141c7-d1e3-45a2-a8e9-6a925c41fd04
